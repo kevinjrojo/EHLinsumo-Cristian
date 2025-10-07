@@ -2,14 +2,11 @@
   "name": "ehlinsumo-cristian",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tuusuario.github.io/EHLinsumo-Cristian/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "eslint"
   },
   "dependencies": {
     "flowbite": "^3.1.2",
