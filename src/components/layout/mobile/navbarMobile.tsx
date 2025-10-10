@@ -7,9 +7,8 @@ export default function NavbarMovbile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="inline sm:hidden">
       <ButtonNavbarMobile onOpenMenu={() => setIsMenuOpen(true)} />
-
       <div className="bg-background-light dark:bg-background-dark font-display ">
         {isMenuOpen && (
           <div
@@ -20,23 +19,22 @@ export default function NavbarMovbile() {
 
         {/* Menú lateral con animación */}
         <div
-          className={`absolute left-0 top-0 z-50 h-dvh w-4/5 w-70 transform transition-transform duration-300 ease-in-out ${
+          className={`absolute left-0 top-0 z-50 h-dvh w-3/5 transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="flex h-full flex-col  bg-black/80">
-            <div className="flex items-center justify-between p-4 border-b border-background-light/50 dark:border-background-dark/50">
+          <div className="flex h-full flex-col  bg-black/80 ">
+            <div className="flex items-center justify-between p-4  dark:border-background-dark/50">
               <h2 className="text-xl font-bold text-gray-900 dark:text-white">
                 EHLinsumo 🦜
               </h2>
               <button
-                className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 cursor-pointer"
+                className="cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="material-symbols-outlined">❌</span>
               </button>
             </div>
-
             <nav className="flex-grow p-4">
               <ul className="space-y-2">
                 <li>

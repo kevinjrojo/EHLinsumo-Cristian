@@ -8,7 +8,7 @@ export default function ButtonNavbarMobile({
   return (
     <span
       className="material-symbols-outlined text-gray-800 dark:text-black cursor-pointer"
-      onClick={() => onOpenMenu()}
+      onClick={onOpenMenu}
     >
       🍔
     </span>
