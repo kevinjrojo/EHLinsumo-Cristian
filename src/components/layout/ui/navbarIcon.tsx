@@ -6,7 +6,7 @@ export default function Icon() {
   return (
     <Link
       href={"#"}
-      className="relative flex items-center justify-center rounded-full p-2 text-gray-500 dark:text-gray-600 hover:bg-primary/20 dark:hover:bg-primary/30 hover:text-primary dark:hover:text-primary transition-colors cursor-auto"
+      className="relative flex items-center justify-center rounded-full p-2 text-gray-700 dark:text-gray-700 hover:bg-primary/20 dark:hover:bg-primary/30 hover:text-primary dark:hover:text-primary transition-colors cursor-auto"
     >
       <svg
         className="h-9 w-9 cursor-pointer"

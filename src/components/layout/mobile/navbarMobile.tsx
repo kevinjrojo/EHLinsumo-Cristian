@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ButtonNavbarMobile from "../ui/buttonNavbarmobile";
+import { X } from "lucide-react";
 
 export default function NavbarMovbile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ export default function NavbarMovbile() {
                 className="cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className="material-symbols-outlined">❌</span>
+                <X className="text-gray-700 dark:text-white" size={28} />
               </button>
             </div>
             <nav className="flex-grow p-4">
