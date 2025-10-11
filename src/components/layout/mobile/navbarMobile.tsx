@@ -3,6 +3,8 @@
 import { useState } from "react";
 import ButtonNavbarMobile from "../ui/buttonNavbarmobile";
 import { X } from "lucide-react";
+import Logo from "../ui/navbarLogo";
+import { NavbarAccordion } from "./navbarAccordion";
 
 export default function NavbarMovbile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,9 +28,7 @@ export default function NavbarMovbile() {
         >
           <div className="flex h-full flex-col  bg-black/80 ">
             <div className="flex items-center justify-between p-4  dark:border-background-dark/50">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-                EHLinsumo 🦜
-              </h2>
+              <Logo />
               <button
                 className="cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
@@ -37,26 +37,8 @@ export default function NavbarMovbile() {
               </button>
             </div>
             <nav className="flex-grow p-4">
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    className="flex items-center gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 px-4 py-3 text-white"
-                    href="#"
-                  >
-                    <span className="material-symbols-outlined">home</span>
-                  </a>
-                </li>
-                <li>
-                  <a className="flex items-center gap-4 rounded-lg px-4 py-3 text-white hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary">
-                    <span className="font-medium">Categorías</span>
-                  </a>
-                </li>
-                <li>
-                  <a className="flex items-center gap-4 rounded-lg px-4 py-3 text-white hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary">
-                    <span className="font-medium">Carrito</span>
-                  </a>
-                </li>
-                <li>
+              <NavbarAccordion />
+              {/* <li>
                   <a className="flex items-center gap-4 rounded-lg px-4 py-3 text-white hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary">
                     <span className="font-medium">Mi Cuenta</span>
                   </a>
@@ -65,18 +47,17 @@ export default function NavbarMovbile() {
                   <a className="flex items-center gap-4 rounded-lg px-4 py-3 text-white hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary">
                     <span className="font-medium">Configuración</span>
                   </a>
-                </li>
-              </ul>
+                </li> */}
             </nav>
 
-            <div className="p-4 flex gap-2 ">
+            {/* <div className="p-4 flex gap-2 ">
               <button className="w-full flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-white font-bold">
                 Registrate
               </button>
               <button className="w-full flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-white font-bold">
                 Iniciar Sesión
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

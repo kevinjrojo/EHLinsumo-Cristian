@@ -49,25 +49,25 @@ export default function Button() {
         </Link>
       </Dropdown>
       <Dropdown
-        label={<span className="text-white ">Electro</span>}
+        label={<span className="text-white ">Electros</span>}
         inline
         className="dropdown-custom"
       >
         <Link href="#">
-          <DropdownItem className="dropdown-custom-item">Pinzas</DropdownItem>
-        </Link>
-        <Link href="#">
           <DropdownItem className="dropdown-custom-item">
-            Martillos
+            Ventiladores
           </DropdownItem>
         </Link>
         <Link href="#">
           <DropdownItem className="dropdown-custom-item">
-            Destornilladores
+            Cafeteras
           </DropdownItem>
         </Link>
         <Link href="#">
-          <DropdownItem className="dropdown-custom-item">Llaves</DropdownItem>
+          <DropdownItem className="dropdown-custom-item">Aires</DropdownItem>
+        </Link>
+        <Link href="#">
+          <DropdownItem className="dropdown-custom-item">Hornos</DropdownItem>
         </Link>
       </Dropdown>
     </nav>

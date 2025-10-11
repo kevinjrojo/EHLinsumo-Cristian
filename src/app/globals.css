@@ -19,12 +19,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .dropdown-custom {
-  @apply bg-green-400  border-transparent;
+  @apply bg-black/80 border-transparent;
 }
-
 .dropdown-custom-item {
   @apply hover:bg-green-700  text-white;
 }
 .text-primary {
   @apply text-gray-600;
+}
+.navbar-custom {
+  @apply bg-transparent text-white;
 }

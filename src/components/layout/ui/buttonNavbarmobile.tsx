@@ -8,8 +8,8 @@ export default function ButtonNavbarMobile({
   onOpenMenu: () => void;
 }) {
   return (
-    <span className="cursor-pointer" onClick={onOpenMenu}>
-      <Menu className="text-gray-700  " size={28} />
+    <span className="cursor-pointer  " onClick={onOpenMenu}>
+      <Menu className="text-gray-900 m-1 " size={30} />
     </span>
   );
 }
