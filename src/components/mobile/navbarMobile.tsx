@@ -1,10 +1,10 @@
 "use Cliente";
 
 import { useState } from "react";
-import ButtonNavbarMobile from "../ui/buttonNavbarmobile";
+import ButtonNavbarMobile from "./buttonNavbarmobile";
 import { X } from "lucide-react";
 import Logo from "../ui/navbarLogo";
-import { NavbarAccordion } from "./navbarAccordion";
+import { NavbarAccordion } from "./navbarAccordionmoMobile";
 
 export default function NavbarMovbile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

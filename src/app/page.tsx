@@ -1,5 +1,5 @@
-import MyNavbar from "../components/layout/layout/navbar";
-import MyLayout from "@/components/layout/layout/layout";
+import MyNavbar from "@/components/layout/navbar";
+import MyLayout from "@/components/layout/layout";
 
 export default function Home() {
   return (

@@ -10,7 +10,7 @@ export function NavbarAccordion() {
   return (
     <Accordion>
       <AccordionPanel>
-        <AccordionTitle className="navbar-custom">Herramientas</AccordionTitle>
+        <AccordionTitle className="navbar-custom ">Herramientas</AccordionTitle>
         <AccordionContent className="navbar-custom">
           <p className="mb-2 ">
             <Link href={"#"}>Pinzas</Link>

@@ -28,5 +28,5 @@ body {
   @apply text-gray-600;
 }
 .navbar-custom {
-  @apply bg-transparent text-white;
+  @apply bg-transparent text-white  focus:outline-none focus:ring-0;
 }
