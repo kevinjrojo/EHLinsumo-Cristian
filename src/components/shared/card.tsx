@@ -17,7 +17,7 @@ export default function Card() {
           <div className="mt-4 flex justify-between">
             <div>
               <h3 className="text-sm ">
-                <Link href="#">
+                <Link href="/products/id">
                   <span aria-hidden="true" className="absolute inset-0 "></span>
                   Polera invierno
                 </Link>
@@ -37,7 +37,7 @@ export default function Card() {
           <div className="mt-4 flex justify-between">
             <div>
               <h3 className="text-sm ">
-                <Link href="#">
+                <Link href="/products/id">
                   <span aria-hidden="true" className="absolute inset-0 "></span>
                   Polera invierno
                 </Link>
@@ -57,7 +57,7 @@ export default function Card() {
           <div className="mt-4 flex justify-between">
             <div>
               <h3 className="text-sm ">
-                <Link href="#">
+                <Link href="/products/id">
                   <span aria-hidden="true" className="absolute inset-0 "></span>
                   Polera invierno
                 </Link>
@@ -77,7 +77,7 @@ export default function Card() {
           <div className="mt-4 flex justify-between">
             <div>
               <h3 className="text-sm ">
-                <Link href="#">
+                <Link href="/products/id">
                   <span aria-hidden="true" className="absolute inset-0 "></span>
                   Polera invierno
                 </Link>
