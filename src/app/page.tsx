@@ -1,10 +1,10 @@
-import MyNavbar from "@/components/layout/navbar";
 import MyLayout from "@/components/layout/layout";
+import Navbar from "@/components/layout/navbar/navbar";
 
 export default function Home() {
   return (
     <div>
-      <MyNavbar />
+      <Navbar />
       <MyLayout />
     </div>
   );
