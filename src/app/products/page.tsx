@@ -1,3 +1,3 @@
-export default function nav() {
+export default function home() {
   return <div></div>;
 }

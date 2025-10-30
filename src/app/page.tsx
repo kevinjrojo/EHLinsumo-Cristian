@@ -1,11 +1,9 @@
-import MyLayout from "@/components/layout/layout";
-import Navbar from "@/components/layout/navbar/navbar";
+import ProductGrid from "@/components/layout/product/productGrid";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <MyLayout />
-    </div>
+    <main className="px-4 py-8">
+      <ProductGrid />
+    </main>
   );
 }
