@@ -9,8 +9,8 @@ export default function ProductCard({
   product: { id: number; name: string; price: number; image: string };
 }) {
   return (
-    <article className="group relative border-1 border-gray-400 rounded-md  p-2">
-      <Link href={"/products/id"}>
+    <article className="group relative bg-gray-100 border-1 border-gray-400 rounded-md  p-2">
+      <Link href={`products/${product.id}`}>
         <section className="aspect-square w-full overflow-hidden rounded-lg bg-gray-500 dark:bg-gray-400">
           <img
             src={product.image}
