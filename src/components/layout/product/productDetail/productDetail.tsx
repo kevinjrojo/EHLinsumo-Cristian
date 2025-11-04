@@ -1,5 +1,5 @@
 import ProductImage from "./productImage";
-import ProductInfo from "./productInfo";
+import ProductInfo from "./ProductInfo";
 
 interface Product {
   id: number;
