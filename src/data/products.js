@@ -12,8 +12,8 @@ export const products = [
     id: 2,
     name: "Producto 2",
     price: 2000,
-    description: "Sierra circular de mesa profesional",
-    category: "Herramientas eléctricas",
+    description: "cinta metrica de 5 metros",
+    category: "Herramientas manuales",
     image:
       "https://images.unsplash.com/photo-1559647746-9b2f216d2dc3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
   },

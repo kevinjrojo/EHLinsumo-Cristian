@@ -1,4 +1,4 @@
-import ProductDetail from "@/components/layout/product/productDetail";
+import ProductDetail from "@/components/layout/product/productDetail/productDetail";
 import { products } from "@/data/products";
 
 export default async function ProductsDetailPage({
@@ -8,7 +8,7 @@ export default async function ProductsDetailPage({
 }) {
   const { id } = await params;
 
-  const product = products.find((p) => p.id.toString() === id);
+  const product = products.find((p) => p.id === Number(id));
 
   if (!product) {
     return <p className="text-center py-20">Producto no encontrado</p>;

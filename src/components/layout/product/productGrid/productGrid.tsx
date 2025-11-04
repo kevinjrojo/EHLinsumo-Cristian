@@ -1,6 +1,6 @@
 "use client";
 
-import ProductCard from "./productCard";
+import ProductCard from "../productCard/productCard";
 import { products } from "@/data/products";
 
 export default function ProductGrid() {
