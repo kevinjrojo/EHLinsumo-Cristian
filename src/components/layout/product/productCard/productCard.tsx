@@ -1,6 +1,7 @@
 "use client";
 
 import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductCard({
@@ -12,10 +13,12 @@ export default function ProductCard({
     <article className="group relative bg-gray-100 border-1 border-gray-400 rounded-md  p-2">
       <Link href={`products/${product.id}`}>
         <section className="aspect-square w-full overflow-hidden rounded-lg bg-gray-500 dark:bg-gray-400">
-          <img
+          <Image
             src={product.image}
             alt={product.name}
             className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+            width={400}
+            height={400}
           />
         </section>
 
