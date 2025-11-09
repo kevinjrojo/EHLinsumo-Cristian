@@ -1,5 +1,5 @@
 import ProductImage from "./productImage";
-import ProductInfo from "./ProductInfo";
+import ProductInfo from "./productInfo.tsx";
 
 interface Product {
   id: number;
