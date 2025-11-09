@@ -2,7 +2,7 @@ import Link from "next/link";
 import QuantitySelector from "./quantitySelector";
 import PaymentMethods from "./paymentMethods";
 
-interface ProductInfoProps {
+interface ProductInfoTempProps {
   product: {
     name: string;
     description: string;
@@ -11,7 +11,7 @@ interface ProductInfoProps {
   };
 }
 
-export default function ProductInfo({ product }: ProductInfoProps) {
+export default function ProductInfoTemp({ product }: ProductInfoTempProps) {
   return (
     <div>
       <div className="flex items-center text-sm text-gray-800 dark:text-gray-900 space-x-2">
