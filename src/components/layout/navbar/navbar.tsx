@@ -5,15 +5,19 @@ import { useState } from "react";
 import DesktopNav from "./desktopNav";
 import MobileMenu from "./mobileMenu";
 import SearchBar from "./searchBar";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState<number | null>(null);
 
   const categories = [
-    { name: "Herramientas", items: ["Taladros", "Destornilladores", "Llaves"] },
-    { name: "Electricidad", items: ["Cables", "Enchufes", "Lámparas"] },
-    { name: "Plomería", items: ["Caños", "Grifería", "Selladores"] },
+    { name: "Ferretería ", items: ["Taladros", "Destornilladores", "Llaves"] },
+    {
+      name: "Repuestos y accesorios",
+      items: ["Cables", "Enchufes", "Lámparas"],
+    },
+    { name: "Hogar y electro", items: ["Caños", "Grifería", "Selladores"] },
   ];
 
   return (
@@ -36,9 +40,12 @@ export default function Navbar() {
         </div>
 
         {/* --- Ícono carrito --- */}
-        <button className="p-2 hover:bg-green-700 rounded-md cursor-pointer">
+        <Link
+          href={"/card"}
+          className="p-2 hover:bg-green-700 rounded-md cursor-pointer"
+        >
           <ShoppingCart size={24} />
-        </button>
+        </Link>
       </nav>
 
       {/* --- Menú lateral móvil --- */}

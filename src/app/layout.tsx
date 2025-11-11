@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { inter } from "../styles/fonts";
 import Navbar from "@/components/layout/navbar/navbar";
+import { CartProvider } from "@/context/cardContext"; // 👈 importá el provider
 
 export default function RootLayout({
   children,
@@ -10,8 +11,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <Navbar />
-        {children}
+        <CartProvider>
+          {" "}
+          {/* 👈 envuelve toda la app */}
+          <Navbar />
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
