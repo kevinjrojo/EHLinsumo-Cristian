@@ -1,19 +1,10 @@
 "use client";
 import { createContext, useContext, useState, useMemo, ReactNode } from "react";
-
-// 🧱 Tipo de producto
-export interface Product {
-  id: number | string;
-  name: string;
-  price: number;
-  image?: string;
-  description?: string;
-  quantity?: number;
-}
+import { Product, CartItem } from "@/types/cartTypes";
 
 // 🧱 Tipo del contexto
 interface CartContextType {
-  cart: Product[];
+  cart: CartItem[];
   addToCart: (product: Product) => void;
   removeFromCart: (id: number | string) => void;
   clearCart: () => void;
@@ -40,7 +31,7 @@ export function useCart(): CartContextType {
 
 // Provider
 export function CartProvider({ children }: CartProviderProps) {
-  const [cart, setCart] = useState<Product[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
 
   // 🛒 Agregar producto
   const addToCart = (product: Product) => {
