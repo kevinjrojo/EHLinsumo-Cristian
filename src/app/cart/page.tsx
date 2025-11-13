@@ -1,5 +1,6 @@
 "use client";
 import { useCart } from "@/context/cardContext";
+import { Trash2 } from "lucide-react";
 import Image from "next/image";
 
 export default function CartPage() {
@@ -24,7 +25,7 @@ export default function CartPage() {
         {cart.map((item) => (
           <div
             key={item.id}
-            className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl shadow p-4"
+            className="flex items-center justify-between bg-white dark:bg-green-600 rounded-xl shadow p-4"
           >
             <div className="flex items-center gap-4">
               {item.image && (
@@ -37,21 +38,23 @@ export default function CartPage() {
                 />
               )}
               <div>
-                <h2 className="font-semibold text-lg">{item.name}</h2>
-                <p className="text-gray-500">
+                <h2 className="font-semibold text-lg text-gray-100">
+                  {item.name}
+                </h2>
+                <p className="text-gray-100">
                   ${item.price.toFixed(2)} x {item.quantity}
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <p className="font-semibold">
+              <p className="font-semibold text-gray-100">
                 ${(item.price * (item.quantity || 1)).toFixed(2)}
               </p>
               <button
                 onClick={() => removeFromCart(item.id)}
-                className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 transition"
+                className="bg-red-500 text-white px-3 p-3 rounded-md hover:bg-red-600 transition cursor-pointer"
               >
-                Quitar
+                <Trash2 />
               </button>
             </div>
           </div>
@@ -65,7 +68,7 @@ export default function CartPage() {
         <div className="flex gap-3">
           <button
             onClick={clearCart}
-            className="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-400 dark:hover:bg-gray-600 transition"
+            className=" bg-gray-300 px-4 py-2 rounded-md hover:bg-gray-400 dark:hover:bg-gray-600 transition"
           >
             Vaciar carrito
           </button>

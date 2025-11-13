@@ -6,10 +6,12 @@ import DesktopNav from "./desktopNav";
 import MobileMenu from "./mobileMenu";
 import SearchBar from "./searchBar";
 import Link from "next/link";
+import { useCart } from "@/context/cardContext";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState<number | null>(null);
+  const { totalItems } = useCart();
 
   const categories = [
     { name: "Ferretería ", items: ["Taladros", "Destornilladores", "Llaves"] },
@@ -41,10 +43,15 @@ export default function Navbar() {
 
         {/* --- Ícono carrito --- */}
         <Link
-          href={"/card"}
-          className="p-2 hover:bg-green-700 rounded-md cursor-pointer"
+          href={"/cart"}
+          className="p-2 hover:bg-green-700 rounded-md cursor-pointer relative"
         >
           <ShoppingCart size={24} />
+          {totalItems > 0 && (
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+              {totalItems}
+            </span>
+          )}
         </Link>
       </nav>
 
