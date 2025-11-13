@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import CategoryDropdown from "./categoryDropdown";
 
 export default function DesktopNav({
@@ -9,7 +10,9 @@ export default function DesktopNav({
 }) {
   return (
     <div className="flex items-center gap-6 z-10">
-      <div className="text-xl font-bold mx-auto sm:mx-0">EHLinsumo 🦜</div>
+      <h1 className="text-xl font-bold mx-auto sm:mx-0">
+        <Link href={"/"}>EHLinsumo 🦜 </Link>
+      </h1>
 
       {/* Categorías (solo desktop) */}
       <div className="hidden sm:flex gap-4">

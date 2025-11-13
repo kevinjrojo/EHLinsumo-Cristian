@@ -12,8 +12,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <CartProvider>
-          {" "}
-          {/* 👈 envuelve toda la app */}
           <Navbar />
           {children}
         </CartProvider>
