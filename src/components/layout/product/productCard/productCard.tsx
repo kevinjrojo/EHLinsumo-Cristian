@@ -3,14 +3,14 @@
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useCart } from "@/context/cardContext"; // 👈 importamos el hook
+import { useCart } from "@/context/cardContext";
 
 export default function ProductCard({
   product,
 }: {
   product: { id: number; name: string; price: number; image: string };
 }) {
-  const { addToCart } = useCart(); // 👈 accedemos a la función agregar
+  const { addToCart } = useCart();
 
   return (
     <article className="group relative bg-gray-100 border border-gray-400 rounded-md p-2">
@@ -35,7 +35,7 @@ export default function ProductCard({
 
       <section>
         <button
-          onClick={() => addToCart(product)} // 👈 agrega el producto al carrito
+          onClick={() => addToCart(product)}
           className="mt-2 w-full bg-green-600 flex justify-center items-center gap-2 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors duration-300"
         >
           <ShoppingCart size={18} /> Agregar

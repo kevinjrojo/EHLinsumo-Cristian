@@ -14,16 +14,19 @@ export default function Navbar() {
   const { totalItems } = useCart();
 
   const categories = [
-    { name: "Ferretería ", items: ["Taladros", "Destornilladores", "Llaves"] },
     {
-      name: "Repuestos y accesorios",
+      name: "Ferretería/Herramientas ",
+      items: ["Taladros", "Destornilladores", "Llaves"],
+    },
+    {
+      name: "Repuestos/Accesorios",
       items: ["Cables", "Enchufes", "Lámparas"],
     },
-    { name: "Hogar y electro", items: ["Caños", "Grifería", "Selladores"] },
+    { name: "Hogar/Electro", items: ["Caños", "Grifería", "Selladores"] },
   ];
 
   return (
-    <header className="bg-green-600 text-white  w-full shadow-md ">
+    <header className="bg-green-600 text-white  w-full shadow-md sticky top-0 z-50">
       <nav className="flex justify-between items-center px-4 sm:px-8 h-16">
         {/* --- Botón hamburguesa (solo móvil) --- */}
         <button
