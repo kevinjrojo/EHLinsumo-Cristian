@@ -16,13 +16,13 @@ export default function Navbar() {
   const categories = [
     {
       name: "Ferretería/Herramientas ",
-      items: ["Taladros", "Destornilladores", "Llaves"],
+      items: ["Taladros", "Destornilladores", "Llaves", "Cintas métricas"],
     },
     {
       name: "Repuestos/Accesorios",
-      items: ["Cables", "Enchufes", "Lámparas"],
+      items: ["Pilas", "Enchufes", "Lámparas"],
     },
-    { name: "Hogar/Electro", items: ["Caños", "Grifería", "Selladores"] },
+    { name: "Hogar/Electro", items: ["Cocina", "Exterior", "Comercios"] },
   ];
 
   return (
