@@ -7,6 +7,7 @@ interface ProductInfoTempProps {
     name: string;
     description: string;
     category: string;
+    subCategory: string;
     price: number;
   };
 }
@@ -19,7 +20,7 @@ export default function ProductInfoTemp({ product }: ProductInfoTempProps) {
           {product.category}
         </a>
         <span>/</span>
-        <span>{product.name}</span>
+        <span>{product.subCategory}</span>
       </div>
 
       <h1 className="text-3xl font-bold mt-4 text-gray-900 dark:text-black">
